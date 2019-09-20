@@ -12,7 +12,7 @@ ul {
     padding: 0;
 }
 
-li a {
+a {
     display: block;
     color: #4aaaa5;
     text-align: center;
@@ -22,13 +22,17 @@ li a {
     display: block;
 }
 
-li a:hover {
+a:hover {
     background-color: #4aaaa5;
     color: #ffffff;
 }
 
 .navlink {
     float: right;
+}
+
+.firstitem {
+    margin-right: 18%;
 }
   
 
@@ -143,3 +147,49 @@ input[type=submit] {
     background-color: #4aaaa5;
     font-weight: bold;
 }
+
+  @media screen and (max-width: 980px) {
+    .content {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        margin-left: 30px;
+    }
+    #navname {
+        margin-left: 50px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .content {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+  }
+
+  @media screen and (max-width: 640px) {
+    .content {
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+    #navname {
+        margin-left: 0px;
+        padding-left: 40%;
+        float: none;
+    }
+    .firstitem {
+        margin-right: 0;
+        padding-left: 30%;
+    }
+    .navlink {
+        float: left;
+        display: inline;
+    }
+
+  }
